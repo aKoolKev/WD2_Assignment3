@@ -3,49 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pokémon Trading Card Game Center!</title>
+        <title> Pokémon Trading Card Game Center! </title>
 
+        <!-- Bootstrap CSS : https://getbootstrap.com/docs/5.3/getting-started/download/-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
-        <!-- Linking Boot Strap -->
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
-        <!-- Linking JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
         <!-- Google Font: https://fonts.google.com/selection -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 
-
-        <!-- Linking stylesheet -->
+        <!-- CSS stylesheet -->
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <body>
         <header>
-            <!-- Title of the Website -->
-            <!-- text-center: https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment -->
-            <!-- text-transform: https://getbootstrap.com/docs/5.3/utilities/text/#text-transform -->
             
+            <!-- WEBSITE TITLE -->
+                <!-- text-center: https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment -->
+                <!-- text-transform: https://getbootstrap.com/docs/5.3/utilities/text/#text-transform -->
             <h1 class="container mt-5 pt-5 text-center text-uppercase">
                 Pokémon Trading Card Game Center!
             </h1>
 
-            <!-- Website logo -->
-            <!-- credit: https://marianoilustrado.blogspot.com/2013/08/zubat-proyecto-pokedex-ilustrado.html -->
-            <!-- center image using BS: https://getbootstrap.com/docs/5.3/utilities/display/ -->
+            <!-- WEBSITE LOGO-->
+                <!-- Image credit: https://marianoilustrado.blogspot.com/2013/08/zubat-proyecto-pokedex-ilustrado.html -->
+                <!-- Center image: https://getbootstrap.com/docs/5.3/utilities/display/ -->
             <img src="images/pokecenter.png" alt="Pokemon Center Pixel Image" id="logo" class="d-block mx-auto">
         
 
-            <!-- How to make BS nav https://getbootstrap.com/docs/5.3/components/navbar/#nav -->
-            <!-- aligning nav: https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
+<!-- WHERE I WENT ABOVE AND BEYOND: This own project was a challenge in its own. It was my first project creating a website 
+     using a CSS framework. It was hard learning the syntax and all the tools I have access to. I spent a great deal of time
+     reading documentations. Things I can easily make in CSS had to be relearn to make the Bootstrap way. If I had to pick where
+     I went above and beyond is the nav bar. I've never included a dropdown menu on a nav bar before. I think that was the coolest
+     feature on this website. -->
 
-            <!-- all pokemon ball : https://github.com/msikma/pokesprite/tree/master/icons/ball -->
-             <!-- Fixed nav bar positon: https://getbootstrap.com/docs/5.3/components/navbar/#placement -->
+            <!-- WEBSITE NAVBAR -->
+                <!-- How to make BS nav: https://getbootstrap.com/docs/5.3/components/navbar/#nav -->
+                <!-- Aligning nav: https://getbootstrap.com/docs/5.3/components/navs-tabs/ -->
+
+                <!-- All pokeball image credit: https://github.com/msikma/pokesprite/tree/master/icons/ball -->
+                <!-- Navbar positioning: https://getbootstrap.com/docs/5.3/components/navbar/#placement -->
             <nav class="navbar fixed-top navbar-expand-lg p-0 m-0" data-bs-theme="dark"> 
                 <div class="container-fluid">
                 
@@ -56,25 +54,26 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                  
-                    <!-- dropdown: https://getbootstrap.com/docs/5.3/components/dropdowns/ -->
-                     <!-- EXPANSIONS -->
+                    <!-- Navbar dropdown: https://getbootstrap.com/docs/5.3/components/dropdowns/ -->
                     <div class="collapse navbar-collapse justify-content-center" id="collapsible-content">
                         <ul class="navbar-nav p-1">
+
+                            <!-- ABOUT -->
                             <li class="nav-item p-2">
-                                <!-- ABOUT -->
                                 <a class="navbar-brand" href="#about-section">
                                     <img src="images/poke.png" alt="Poke ball sprite"  width="25" height="auto" class="d-inline-block align-text-center">
                                         About
                                 </a>
                             </li>
 
+                            <!-- EXPANSIONS -->
                             <li class="nav-item dropdown p-2">
                                 <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="images/great.png" alt="Great ball sprite" width="25" height="auto" class="d-inline-block align-text-center">
                                         Expansions
                                 </a>
-
+                                
+                                <!-- Dropdown content -->
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#lost-origin-section">Lost Origin</a></li>
                                     <li><a class="dropdown-item" href="#evolving-skies-section">Evolving Skies</a></li>
@@ -100,7 +99,7 @@
                             </li>
                             
                         </ul>
-                    </div> <!-- End of collapse content -->
+                    </div> <!-- End of collapsible content -->
 
                 </div> <!-- End of container -->
 
@@ -110,9 +109,10 @@
 
         <main>
 
-        
+            <!-- All pokemon card images came from: https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/-->
+
             <!-- ABOUT US -->
-            <!-- containers: https://getbootstrap.com/docs/5.3/layout/containers/ -->
+            <!-- BS containers: https://getbootstrap.com/docs/5.3/layout/containers/ -->
             <section id="about-section" class="container text-center">
                 <h2 class="text-uppercase">About Us</h2>
                 <p class="expansion-info">
@@ -123,12 +123,11 @@
                 </p>
             </section>
         
-
             <!-- LOST ORIGIN -->
             <section id="lost-origin-section">
                 <div class="container text-center">
-                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-lost-origin -->
                     
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-lost-origin -->
                     <img src="images/lost-origin-logo.png" class="expansion-logo img-fluid" alt="Lost Origin Expansion Logo">
 
                     <p class="expansion-info">
@@ -138,7 +137,9 @@
                         Enamorus V and Radiant Gardevoir dazzle with magic in the Sword & Shield—Lost Origin 
                         expansion!
                     </p>
+
                 </div>
+
                 <div class="container-fluid text-center">
 
                     <!-- Learned 'row', 'col', and 'container' from: https://getbootstrap.com/docs/5.3/layout/columns & https://www.youtube.com/watch?v=eow125xV5-c&t=211s -->
@@ -148,13 +149,13 @@
 
                         <!-- BS col 1 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 1 -->
-                            <!-- BS card component -->
+                            <!-- BS card component : https://getbootstrap.com/docs/5.3/components/card/ -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Pikachu-V.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Pikachu-V.png" alt="Pikachu V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Pikachu V</h3>
+
                                     <!-- font size: https://getbootstrap.com/docs/5.3/utilities/text/#font-size -->
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Trainer Gallery, Character Rare) </h4>
 
@@ -162,188 +163,152 @@
                                     <p class="card-text fs-4 text-info-emphasis">$24.32</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 1 -->
 
                         <!-- BS col 2 -->
-                        <!-- How to center content in a column: https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column -->
-                        <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-center">
 
-                            
+                        <!-- How to center content in a column: https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
                             <!-- CARD 2 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Pikachu-VMAX.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Pikachu-VMAX.png" alt="Pikachu-VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Pikachu VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Trainer Gallery, Character Rare)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$30.65</p>
                                 </div>
                             </div>
-
                         </div> <!-- End col 2 -->
 
                          <!-- BS col 3-->
                          <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 3 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Aerodactyl-VSTAR.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Aerodactyl-VSTAR.png" alt="Aerodactyl VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Aerodactyl VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$8.93</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 3 -->
 
                         <!-- BS col 4 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 4 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Aerodactyl-V.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Aerodactyl-V.png" alt="Aerodactyl V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Aerodactyl V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$102.33</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 4 -->                  
 
                         <!-- BS col 5-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 5 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Galarian-Perrserker-V.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Galarian-Perrserker-V.png" alt="Galarian Perrserker V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Galarian Perrserker V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$17.50</p>
                                 </div>
-                            </div>
-                                    
+                            </div>     
                         </div> <!-- End col 5 -->
                                 
                         <!-- BS col 6-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 6 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Giratina VSTAR(rainbow).png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Giratina VSTAR(rainbow).png" alt="Giratina VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$16.25</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 6 -->
                                  
                         <!-- BS col 7-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 7 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Giratina-VSTAR.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Giratina-VSTAR.png" alt="Giratina VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Gold Rare)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$8.15</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 7 -->
 
                         <!-- BS col 8-->
-                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
+                        <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">                            
                             <!-- CARD 8 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Giratina-V.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Giratina-V.png" alt="Giratina V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina V </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$339.08</p>
                                 </div>
                             </div>
-                        
                         </div> <!-- End col 8 -->
                             
                         <!-- BS col 9-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 9 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Lost-Vacuum.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Lost-Vacuum.png" alt="Lost Vacuum Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Lost Vacuum</h3>
                                     <p class="card-text fs-4 text-info-emphasis">$4.61</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 9 -->
                             
                         <!-- BS col 10-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 10 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/Rotom-V.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Rotom-V.png" alt="Rotom V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Rotom V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$35.91</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 10 -->
                             
                         <!-- BS col 11-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 11 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/lost-origin/mew-VMAX.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/mew-VMAX.png" alt="Mew VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Mew VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Black Gold Full Art) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$10.44</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 11 -->
                             
                         <!-- BS col 12-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 12 -->
-                            <!-- BS card component -->
                             <div class="card">
-
-                                <img class="card-img-top" src="images/lost-origin/Colresss-Experiment.png" alt="">
+                                <img class="card-img-top" src="images/lost-origin/Colresss-Experiment.png" alt="Colresss Experiment Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Colress's Experiment</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Full Art) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$15.92</p>
                                 </div>
                             </div>
-                        
                         </div> <!-- End col 12-->
-
-
                     </div> <!-- End of row 1-->
-
                 </div> <!-- End of container -->
             </section> <!-- End of lost origin section -->
 
@@ -352,8 +317,8 @@
             <section id="evolving-skies-section">
 
                 <div class="container text-center">
-                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-evolving-skies -->
                     
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-evolving-skies -->
                     <img src="images/evolving-skies-logo.png" class="expansion-logo img-fluid" alt="Evolving Skies Expansion Logo">
 
                     <p class="expansion-info">
@@ -364,181 +329,146 @@
                     </p>
                 </div>
 
-                
                 <div class="container-fluid text-center"> 
-
-                    <!-- Learned 'row', 'col', 'container'  : https://getbootstrap.com/docs/5.3/layout/columns -->
 
                     <!-- BS row -->
                     <div class="row">
 
                         <!-- BS col 1 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 1 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/Rayquaza-VMAX-rainbow.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/Rayquaza-VMAX-rainbow.png" alt="Rayquaza VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VMAX </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$32.00</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 1 -->
 
                         <!-- BS col 2 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 2 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/rayquaza-v.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/rayquaza-v.png" alt="Rayquaza V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Rayquaza V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$134.99</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 2 -->
                             
                         <!-- BS col 3 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 3 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/rayquaza-vmax.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/rayquaza-vmax.png" alt="Rayquaza VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Rayquaza VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$421.68</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 3 -->
 
                          <!-- BS col 4 -->
                          <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 4 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/dragonite-v.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/dragonite-v.png" alt="Dragonite V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Dragonite V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$159.69</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 4 -->             
 
                         <!-- BS col 5 -->
-                        <!-- How to center content in a column: https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column -->
                         <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-center">
-
                             <!-- CARD 5 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/glaceon-v.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/glaceon-v.png" alt="Glaceon V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$81.95</p>
                                 </div>
                             </div>
-
                         </div> <!-- End col 5 -->
 
                         <!-- BS col 6 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 6 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/espeon-v.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/espeon-v.png" alt="Espeon V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Espeon V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$99.95</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 6 -->
 
                         <!-- BS col 7 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 7 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/umbreon-v.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/umbreon-v.png" alt="Umbreon V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Umbreon V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$155.96</p>
                                 </div>
                             </div>
-                                    
                         </div> <!-- End col 7 -->
 
                         <!-- BS col 8 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 8 -->
-                            <!-- BS card component -->
                             <div class="card">
-
-                                <img class="card-img-top" src="images/evolving-skies/Sylveon-V.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/Sylveon-V.png" alt="Sylveon V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Sylveon V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Full Art) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$49.10</p>
                                 </div>
                             </div>
-                        
                         </div> <!-- End col 8 -->
                                     
                         <!-- BS col 9 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 9 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/sylveon-vmax.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/sylveon-vmax.png" alt="Sylveon VMAX Pokemon Card">
                                 <div class="card-body">
-                                    <h3 class="card-title">Sylveon VMAX </h3>
+                                    <h3 class="card-title">Sylveon VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$209.95</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 9 -->
                         
                         <!-- BS col 10 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 10 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/glaceon-vmax.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/glaceon-vmax.png" alt="Glaceon VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon VMAX </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$255.61</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 10 -->
                             
                         <!-- BS col 11 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 11 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/leafeon-vmax.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/leafeon-vmax.png" alt="Leafeon VMAX">
                                 <div class="card-body">
                                     <h3 class="card-title">Leafeon VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
@@ -550,11 +480,9 @@
 
                         <!-- BS col 12-->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 12 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/evolving-skies/umbreon-vmax.png" alt="">
+                                <img class="card-img-top" src="images/evolving-skies/umbreon-vmax.png" alt="Umbreon VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Umbreon VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
@@ -565,7 +493,6 @@
                         </div> <!-- End col 12 -->
 
                     </div> <!-- End of row 1-->
-
                 </div> <!-- End of container -->
             </section> <!-- End of evolving skies section -->
 
@@ -574,8 +501,8 @@
             <section id="crown-zenith-section">
 
                 <div class="container text-center">
-                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/crown-zenith -->
                     
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/crown-zenith -->
                     <img src="images/crown-zenith-logo.png" class="expansion-logo img-fluid" alt="Crown Zenith Expansion Logo">
 
                     <p class="expansion-info">
@@ -593,211 +520,173 @@
 
                         <!-- BS col 1 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 1 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/entei-v.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/entei-v.png" alt="Entei V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Entei V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$18.23</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 1 -->
 
                         <!-- BS col 2 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 2 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/raikou-v.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/raikou-v.png" alt="Raikou V Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Raikou V</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$18.54</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 2 -->
                             
                         <!-- BS col 3 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 3 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/Deoxys-VMAX.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/Deoxys-VMAX.png" alt="Deoxys VMAX Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Deoxys VMAX</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> Galarian Gallery </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$16.46</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 3 -->
 
                          <!-- BS col 4 -->
                          <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 4 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/elesas-sparkle.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/elesas-sparkle.png" alt="Elesa's Sparkle">
                                 <div class="card-body">
                                     <h3 class="card-title">Elesa's Sparkle</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$13.49</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 4 -->    
                         
                         <!-- BS col 5 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 5 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/glaceon-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/glaceon-vstar.png" alt="Glaceon VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$22.11</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 5 -->
 
                         <!-- BS col 6 -->
-                        <!-- How to center content in a column: https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column -->
                         <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-center">
-
                             <!-- CARD 6 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/leafeon-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/leafeon-vstar.png" alt="Leafeon VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Leafeon VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$21.74</p>
                                 </div>
                             </div>
-
                         </div> <!-- End col 6 -->
 
                         <!-- BS col 7 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 7 -->
-                            <!-- BS card component -->
                             <div class="card">
-
-                                <img class="card-img-top" src="images/crown-zenith/charizard-vstar-promo.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/charizard-vstar-promo.png" alt="Charizard VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Charizard VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Promo) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$12.99</p>
                                 </div>
                             </div>
-                        
                         </div> <!-- End col 7 -->
                                     
                         <!-- BS col 8 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 8 -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/mewtwo-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/mewtwo-vstar.png" alt="Mewtwo VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Mewtwo VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$53.25</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 8 -->
                         
                       
                         <!-- BS col 9 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 9 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/origin-foreme-dialga-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/origin-foreme-dialga-vstar.png" alt="Origin Foreme Dialga VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Origin Forme Dialga VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$40.13</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 9 -->
 
                         <!-- BS col 10 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-
                             <!-- CARD 10 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/origin-forme-palkia-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/origin-forme-palkia-vstar.png" alt="Origin Forme Palkia VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Origin Forme Palkia VSTAR </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$43.57</p>
                                 </div>
                             </div>
-                                    
                         </div> <!-- End col 10 -->
 
                           <!-- BS col 11 -->
                           <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 11 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/arceus-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/arceus-vstar.png" alt="Arceus VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Arceus VSTAR</h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
                                     <p class="card-text fs-4 text-info-emphasis">$62.12</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 11 -->
                             
                         <!-- BS col 12 -->
                         <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center">
-                            
                             <!-- CARD 12 -->
-                            <!-- BS card component -->
                             <div class="card">
-                                <img class="card-img-top" src="images/crown-zenith/giratina-vstar.png" alt="">
+                                <img class="card-img-top" src="images/crown-zenith/giratina-vstar.png" alt="Giratina VSTAR Pokemon Card">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR </h3>
                                     <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery) </h4>
                                     <p class="card-text fs-4 text-info-emphasis">$99.34</p>
                                 </div>
                             </div>
-                            
                         </div> <!-- End col 12 -->
 
                     </div> <!-- End of row 1-->
-
                 </div> <!-- End of container -->
             </section> <!-- End of Crown Zenith section -->
 
-        
-           
         </main>
 
-        <!-- learning bg : https://getbootstrap.com/docs/5.3/utilities/background/ -->
         <!-- How to use BS flex : https://getbootstrap.com/docs/5.3/utilities/flex/ -->
         <footer class="d-flex justify-content-center align-items-center p-3 text-white text-center">
             <p> &copy; 2024 Kevin Dong. All rights reserved. <a href="#">Back to Top</a></p>
-        </footer>     
-          
+        </footer> 
+        
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
