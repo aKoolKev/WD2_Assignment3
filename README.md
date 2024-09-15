@@ -20,8 +20,9 @@ https://www.youtube.com/watch?v=eow125xV5-c&t=211s
     Fix header issue                        [DONE]
     Remove guide lines                      [DONE]
     Scale logo                              [DONE]
+    Select typography                       [DONE]
+    Add expansion photos                    [DONE]
         
 
-
-    * img alt tag && credit pokemon db
-    > select typography
+    * Img alt tag && credit pokemon db
+    * Clean up code and comment

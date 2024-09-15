@@ -1,13 +1,32 @@
 body{
     font-size: 16px;
     margin: 0;
-    background-color: red;
+
+    /* https://www.w3schools.com/htmL/html_images_background.asp */
+
+    /* Image credit: https://wallpapercave.com/grass-type-pokemon-wallpapers */
+    background-image: url(images/bg4.png);
+    background-repeat: no-repeat;
+    background-color: #8AB278;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+    color: black;
 }
 
 .card{
     width: 75%;
     height: auto;
     margin-top: 15px;
+    /* background-color: #EFFAF9; */
+    background-color: #effaf95b;
+    border-radius: 15px;
+}
+.card-body{
+    background-color: #effaf95b;
+    border-radius: 15px;
 }
 
 #about-section p {
@@ -36,10 +55,15 @@ footer p{
     margin: 0;
 }
 
+footer a{
+    text-decoration: none;
+    color: rgb(163, 162, 162);
+    font-weight: bold;
+}
+
 nav{
     background-color: #6d6969;
 }
-
 
 .my-toggle-button{
     padding: 10px;
@@ -50,7 +74,49 @@ section {
     padding-top: 60px;
 }
 
+h1, h2{
+    /* font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        font-style: normal;
+        
+            
+}
+
 h2{
     text-align: center;
     padding: 25px 0;
+}
+
+/* For small devices such as mobile */
+@media (max-width: 570px) {
+    .card{
+        width: 65%;
+    }
+}
+
+.dropdown-menu{
+    background-color: #759765;
+}
+.dropdown-item{
+    color: #fff;
+}
+.dropdown-item:hover{
+    background-color: #4c6242;
+}
+
+.expansion-logo{
+    width: 35%;
+    height: auto;
+}
+
+.expansion-info{
+    background-color:#effaf95b;
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 2;
 }

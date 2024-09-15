@@ -5,9 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pokémon Trading Card Game Center!</title>
 
-        <!-- Linking stylesheet -->
-        <link rel="stylesheet" href="styles.css">
-
+        
         <!-- Linking Boot Strap -->
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,19 +14,24 @@
         <!-- Linking JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Google Font: https://fonts.google.com/selection/embed  -->
+
+        <!-- Google Font: https://fonts.google.com/selection -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+
+        <!-- Linking stylesheet -->
+        <link rel="stylesheet" href="styles.css">
 
     </head>
     <body>
         <header>
-
             <!-- Title of the Website -->
             <!-- text-center: https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment -->
+            <!-- text-transform: https://getbootstrap.com/docs/5.3/utilities/text/#text-transform -->
             
-            <h1 class="text-center mt-5 pt-5 container">
+            <h1 class="container mt-5 pt-5 text-center text-uppercase">
                 Pokémon Trading Card Game Center!
             </h1>
 
@@ -43,7 +46,7 @@
 
             <!-- all pokemon ball : https://github.com/msikma/pokesprite/tree/master/icons/ball -->
              <!-- Fixed nav bar positon: https://getbootstrap.com/docs/5.3/components/navbar/#placement -->
-            <nav class="navbar fixed-top navbar-expand-md p-0 m-0" data-bs-theme="dark"> 
+            <nav class="navbar fixed-top navbar-expand-lg p-0 m-0" data-bs-theme="dark"> 
                 <div class="container-fluid">
                 
                     <!-- https://getbootstrap.com/docs/5.3/components/navbar/#responsive-behaviors -->
@@ -74,12 +77,11 @@
 
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#lost-origin-section">Lost Origin</a></li>
-                                    <li><a class="dropdown-item" href="#crown-zenith-section">Crown Zenith</a></li>
                                     <li><a class="dropdown-item" href="#evolving-skies-section">Evolving Skies</a></li>
+                                    <li><a class="dropdown-item" href="#crown-zenith-section">Crown Zenith</a></li>
                                 </ul>
                             </li>
                         
-
 
                             <!-- OFFICAL POKEMON WEBSITE -->
                             <li class="nav-item p-2">
@@ -104,7 +106,6 @@
 
             </nav>
             
-
         </header>
 
         <main>
@@ -113,8 +114,8 @@
             <!-- ABOUT US -->
             <!-- containers: https://getbootstrap.com/docs/5.3/layout/containers/ -->
             <section id="about-section" class="container text-center">
-                <h2>About Us</h2>
-                <p>
+                <h2 class="text-uppercase">About Us</h2>
+                <p class="expansion-info">
                     Welcome to our Pokémon Trading Card Game Center! 
                     Here, we showcase some of the most coveted chase cards from each Pokémon expansion. 
                     Whether you're a seasoned collector or just starting your journey, you'll find highlights 
@@ -125,7 +126,19 @@
 
             <!-- LOST ORIGIN -->
             <section id="lost-origin-section">
-                <h2>Lost Origin</h2>   
+                <div class="container text-center">
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-lost-origin -->
+                    
+                    <img src="images/lost-origin-logo.png" class="expansion-logo img-fluid" alt="Lost Origin Expansion Logo">
+
+                    <p class="expansion-info">
+                        As dimensions tear apart, Giratina VSTAR plunges the world into the Lost Zone's abyss! 
+                        Unlike the discard pile, cards here cannot be recovered. Aerodactyl VSTAR, Magnezone, 
+                        Drapion, Hisuian Goodra, Hisuian Zoroark, and Kyurem VMAX showcase their power, while 
+                        Enamorus V and Radiant Gardevoir dazzle with magic in the Sword & Shield—Lost Origin 
+                        expansion!
+                    </p>
+                </div>
                 <div class="container-fluid text-center">
 
                     <!-- Learned 'row', 'col', and 'container' from: https://getbootstrap.com/docs/5.3/layout/columns & https://www.youtube.com/watch?v=eow125xV5-c&t=211s -->
@@ -142,8 +155,11 @@
                                 <img class="card-img-top" src="images/lost-origin/Pikachu-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Pikachu V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Trainer Gallery, Character Rare) </h4>
-                                    <p class="card-text">$24.32</p>
+                                    <!-- font size: https://getbootstrap.com/docs/5.3/utilities/text/#font-size -->
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Trainer Gallery, Character Rare) </h4>
+
+                                    <!-- text-info: https://getbootstrap.com/docs/5.3/utilities/colors/ -->
+                                    <p class="card-text fs-4 text-info-emphasis">$24.32</p>
                                 </div>
                             </div>
                             
@@ -160,8 +176,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Pikachu-VMAX.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Pikachu VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Trainer Gallery, Character Rare)</h4>
-                                    <p class="card-text">$30.65</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Trainer Gallery, Character Rare)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$30.65</p>
                                 </div>
                             </div>
 
@@ -176,8 +192,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Aerodactyl-VSTAR.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Aerodactyl VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Rainbow Rare)</h4>
-                                    <p class="card-text">$8.93</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$8.93</p>
                                 </div>
                             </div>
                             
@@ -192,8 +208,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Aerodactyl-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Aerodactyl V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Art)</h4>
-                                    <p class="card-text">$102.33</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$102.33</p>
                                 </div>
                             </div>
                             
@@ -208,8 +224,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Galarian-Perrserker-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Galarian Perrserker V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Art)</h4>
-                                    <p class="card-text">$17.50</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$17.50</p>
                                 </div>
                             </div>
                                     
@@ -224,8 +240,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Giratina VSTAR(rainbow).png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Rainbow Rare)</h4>
-                                    <p class="card-text">$16.25</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$16.25</p>
                                 </div>
                             </div>
                             
@@ -239,8 +255,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Giratina-VSTAR.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Gold Rare)</h4>
-                                    <p class="card-text">$8.15</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Gold Rare)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$8.15</p>
                                 </div>
                             </div>
                             
@@ -254,8 +270,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Giratina-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina V </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Art)</h4>
-                                    <p class="card-text">$339.08</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$339.08</p>
                                 </div>
                             </div>
                         
@@ -270,7 +286,7 @@
                                 <img class="card-img-top" src="images/lost-origin/Lost-Vacuum.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Lost Vacuum</h3>
-                                    <p class="card-text">$4.61</p>
+                                    <p class="card-text fs-4 text-info-emphasis">$4.61</p>
                                 </div>
                             </div>
                             
@@ -285,8 +301,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Rotom-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Rotom V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Alternate Art) </h4>
-                                    <p class="card-text">$35.91</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$35.91</p>
                                 </div>
                             </div>
                             
@@ -301,8 +317,8 @@
                                 <img class="card-img-top" src="images/lost-origin/mew-VMAX.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Mew VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Black Gold Full Art) </h4>
-                                    <p class="card-text">$10.44</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Black Gold Full Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$10.44</p>
                                 </div>
                             </div>
                             
@@ -318,8 +334,8 @@
                                 <img class="card-img-top" src="images/lost-origin/Colresss-Experiment.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Colress's Experiment</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Full Art) </h4>
-                                    <p class="card-text">$15.92</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Full Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$15.92</p>
                                 </div>
                             </div>
                         
@@ -334,8 +350,22 @@
 
             <!-- Evolving Skies -->
             <section id="evolving-skies-section">
-                <div class="container-fluid text-center">
-                    <h2>Evolving Skies</h2>   
+
+                <div class="container text-center">
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/sword-shield-evolving-skies -->
+                    
+                    <img src="images/evolving-skies-logo.png" class="expansion-logo img-fluid" alt="Evolving Skies Expansion Logo">
+
+                    <p class="expansion-info">
+                        Feel the power of shifting winds as mighty Dragon-type Pokémon return! Rayquaza VMAX soars high, 
+                        and Duraludon VMAX towers in Gigantamax form, alongside Dragonite V, Noivern V, and more. As the 
+                        skies clear, Eevee’s Evolutions shine in a rainbow of Pokémon V and VMAX, heralding a bright new 
+                        day in Pokémon TCG: Sword & Shield—Evolving Skies!
+                    </p>
+                </div>
+
+                
+                <div class="container-fluid text-center"> 
 
                     <!-- Learned 'row', 'col', 'container'  : https://getbootstrap.com/docs/5.3/layout/columns -->
 
@@ -350,8 +380,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/Rayquaza-VMAX-rainbow.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VMAX </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Rainbow Rare)</h4>
-                                    <p class="card-text">$32.00</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Rainbow Rare)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$32.00</p>
                                 </div>
                             </div>
                             
@@ -366,8 +396,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/rayquaza-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Rayquaza V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Full Art)</h4>
-                                    <p class="card-text">$134.99</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$134.99</p>
                                 </div>
                             </div>
                             
@@ -382,8 +412,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/rayquaza-vmax.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Rayquaza VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Alternate Art) </h4>
-                                    <p class="card-text">$421.68</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$421.68</p>
                                 </div>
                             </div>
                             
@@ -398,8 +428,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/dragonite-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Dragonite V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Full Art)</h4>
-                                    <p class="card-text">$159.69</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$159.69</p>
                                 </div>
                             </div>
                             
@@ -415,8 +445,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/glaceon-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Full Art)</h4>
-                                    <p class="card-text">$81.95</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$81.95</p>
                                 </div>
                             </div>
 
@@ -431,8 +461,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/espeon-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Espeon V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Full Art)</h4>
-                                    <p class="card-text">$99.95</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$99.95</p>
                                 </div>
                             </div>
                             
@@ -447,8 +477,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/umbreon-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Umbreon V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Full Art)</h4>
-                                    <p class="card-text">$155.96</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$155.96</p>
                                 </div>
                             </div>
                                     
@@ -464,8 +494,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/Sylveon-V.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Sylveon V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Alternate Full Art) </h4>
-                                    <p class="card-text">$49.10</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Full Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$49.10</p>
                                 </div>
                             </div>
                         
@@ -479,8 +509,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/sylveon-vmax.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Sylveon VMAX </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Art)</h4>
-                                    <p class="card-text">$209.95</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$209.95</p>
                                 </div>
                             </div>
                             
@@ -495,8 +525,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/glaceon-vmax.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon VMAX </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Alternate Art)</h4>
-                                    <p class="card-text">$255.61</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Alternate Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$255.61</p>
                                 </div>
                             </div>
                             
@@ -511,8 +541,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/leafeon-vmax.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Leafeon VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Alternate Art) </h4>
-                                    <p class="card-text">$284.94</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$284.94</p>
                                 </div>
                             </div>
                             
@@ -527,8 +557,8 @@
                                 <img class="card-img-top" src="images/evolving-skies/umbreon-vmax.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Umbreon VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Alternate Art) </h4>
-                                    <p class="card-text">$985.50</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Alternate Art) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$985.50</p>
                                 </div>
                             </div>
                             
@@ -542,10 +572,21 @@
 
             <!-- Crown Zenith -->
             <section id="crown-zenith-section">
-                <div class="container-fluid text-center">
-                    <h2>Crown Zenith</h2>   
 
-                    <!-- Learned 'row', 'col', 'container'  : https://getbootstrap.com/docs/5.3/layout/columns -->
+                <div class="container text-center">
+                    <!-- Image credit: https://www.pokemon.com/us/pokemon-tcg/crown-zenith -->
+                    
+                    <img src="images/crown-zenith-logo.png" class="expansion-logo img-fluid" alt="Crown Zenith Expansion Logo">
+
+                    <p class="expansion-info">
+                        Legendary heroes Zacian and Zamazenta debut new VSTAR Powers, as Pokémon and Trainers unite to 
+                        celebrate the Pokémon V era! Discover stunning illustrations in the Galarian Gallery and unleash 
+                        rare Pokémon like Charizard VSTAR and Radiant Charizard. The Sword & Shield Series reaches its 
+                        peak in the Pokémon TCG: Crown Zenith expansion!
+                    </p>
+                </div>
+
+                <div class="container-fluid text-center">  
 
                     <!-- BS row -->
                     <div class="row">
@@ -558,8 +599,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/entei-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Entei V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Galarian Gallery)</h4>
-                                    <p class="card-text">$18.23</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$18.23</p>
                                 </div>
                             </div>
                             
@@ -574,8 +615,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/raikou-v.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Raikou V</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$18.54</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$18.54</p>
                                 </div>
                             </div>
                             
@@ -590,8 +631,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/Deoxys-VMAX.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Deoxys VMAX</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> Galarian Gallery </h4>
-                                    <p class="card-text">$16.46</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> Galarian Gallery </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$16.46</p>
                                 </div>
                             </div>
                             
@@ -606,8 +647,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/elesas-sparkle.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Elesa's Sparkle</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Full Art)</h4>
-                                    <p class="card-text">$13.49</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Full Art)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$13.49</p>
                                 </div>
                             </div>
                             
@@ -622,8 +663,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/glaceon-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Glaceon VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Galarian Gallery) </h4>
-                                    <p class="card-text">$22.11</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$22.11</p>
                                 </div>
                             </div>
                             
@@ -639,8 +680,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/leafeon-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Leafeon VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$21.74</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$21.74</p>
                                 </div>
                             </div>
 
@@ -656,8 +697,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/charizard-vstar-promo.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Charizard VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Promo) </h4>
-                                    <p class="card-text">$12.99</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Promo) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$12.99</p>
                                 </div>
                             </div>
                         
@@ -671,8 +712,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/mewtwo-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Mewtwo VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$53.25</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$53.25</p>
                                 </div>
                             </div>
                             
@@ -688,8 +729,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/origin-foreme-dialga-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Origin Forme Dialga VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$40.13</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$40.13</p>
                                 </div>
                             </div>
                             
@@ -704,8 +745,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/origin-forme-palkia-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Origin Forme Palkia VSTAR </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$43.57</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$43.57</p>
                                 </div>
                             </div>
                                     
@@ -720,8 +761,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/arceus-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Arceus VSTAR</h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary">(Galarian Gallery)</h4>
-                                    <p class="card-text">$62.12</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary">(Galarian Gallery)</h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$62.12</p>
                                 </div>
                             </div>
                             
@@ -736,8 +777,8 @@
                                 <img class="card-img-top" src="images/crown-zenith/giratina-vstar.png" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Giratina VSTAR </h3>
-                                    <h4 class="card-subtitle mb-2 text-body-secondary"> (Galarian Gallery) </h4>
-                                    <p class="card-text">$99.34</p>
+                                    <h4 class="card-subtitle fs-5 mb-2 text-body-secondary"> (Galarian Gallery) </h4>
+                                    <p class="card-text fs-4 text-info-emphasis">$99.34</p>
                                 </div>
                             </div>
                             
@@ -755,7 +796,7 @@
         <!-- learning bg : https://getbootstrap.com/docs/5.3/utilities/background/ -->
         <!-- How to use BS flex : https://getbootstrap.com/docs/5.3/utilities/flex/ -->
         <footer class="d-flex justify-content-center align-items-center p-3 text-white text-center">
-            <p> &copy; 2024 Kevin Dong. All rights reserved. </p>
+            <p> &copy; 2024 Kevin Dong. All rights reserved. <a href="#">Back to Top</a></p>
         </footer>     
           
     </body>
