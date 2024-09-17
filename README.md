@@ -2,7 +2,7 @@
 
 Welcome to ** Pokémon Trading Card Center**, a resource to see the most valuable, "chase", cards in one of the three Pokémon Expansions: Lost Origin, Crown Zenith, and Evolving Skies.
 
-# The third assignment for Web Design II focused on utilizing modern CSS frameworks such as Bootstrap to develop responsible web applications.  
+The third assignment for Web Design II focused on utilizing modern CSS frameworks such as Bootstrap to develop responsible web applications.
 
 ## Features
 
